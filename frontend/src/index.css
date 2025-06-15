@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+.nav-link.active hr {
+  transform: scaleX(1);
+}
+
+.nav-link hr {
+  transform: scaleX(0); /* Start with 0 width */
+  transform-origin: center;
+  transition: transform 400ms ease-in-out;
+}
+
+.nav-link:hover hr {
+  /* Ensure it's block-level if it's not already */
+  transform: scaleX(1); /* Scales its width to 100% */
+}
+
+/* .app {
+  overflow-y: scroll;
+  scrollbar-gutter: stable both-edges;
+} */
+
+::-webkit-scrollbar {
+  display: none;
+}
