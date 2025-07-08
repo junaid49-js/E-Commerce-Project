@@ -3,6 +3,7 @@ import cors from "cors";
 import "dotenv/config.js";
 import connectDB from "./config/connect_mongodb.js";
 import connectCloudinary from "./config/connect_cloudinary.js";
+import userRouter from "./routes/userRoute.js";
 
 const app = express();
 const port = 4000;
