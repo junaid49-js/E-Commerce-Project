@@ -2,8 +2,8 @@ import express from "express";
 import cors from "cors";
 import "dotenv/config.js";
 import userRouter from "./routes/userRoute.js";
-import connectDB from "./config/mongodb.js";
-import connectCloudinary from "./config/connectCloudinary.js";
+import connectDB from "./config/connect_mongodb.js";
+import connectCloudinary from "./config/connect_cloudinary.js";
 import productRouter from "./routes/productRoute.js";
 
 const app = express();
